@@ -36,19 +36,30 @@ class _NotificationPageState extends State<NotificationPage> {
                 fontWeight: FontWeight.bold,
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontFamily: 'RobotoMono'),),
-                backgroundColor: Color.fromARGB(255, 63, 2, 175),
+                backgroundColor: Color.fromARGB(255, 7, 7, 7),
                 centerTitle: true,
       ),
-      body: ListView.builder(
-        itemCount: notifications.length,
-        itemBuilder: (BuildContext context, int index) {
-          return NotificationListItem(
-            notification: notifications[index],
-          );
-        },
-      ),
-    );
-  }
+      body: Container(
+      decoration: BoxDecoration(
+      gradient: LinearGradient(
+      colors: <Color>[
+        Color.fromARGB(255, 249, 248, 250),
+        Color.fromARGB(255, 233, 133, 61)
+        ],
+        begin: Alignment.topRight,
+        ),
+        ),
+      child: ListView.builder(
+      itemCount: notifications.length,
+      itemBuilder: (BuildContext context, int index) {
+      return NotificationListItem(
+        notification: notifications[index],
+      );
+    },
+  ),
+  ));
+
+}
 }
 
 class NotificationListItem extends StatefulWidget {

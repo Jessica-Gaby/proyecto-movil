@@ -14,20 +14,20 @@ class _PerfilPageState extends State<PerfilPage> {
       child: Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Cuenta',
+          'Mi Perfil',
           style: TextStyle(
               fontSize: 40.0,
               fontWeight: FontWeight.bold,
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 63, 2, 175),
+        backgroundColor: Color.fromARGB(255, 26, 25, 25),
       ),
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(colors:<Color>[ 
-              Color.fromARGB(255, 53, 10, 103),
-              Color.fromARGB(0, 69, 144, 235)],
+              Color.fromARGB(255, 249, 248, 250),
+              Color.fromARGB(255, 233, 133, 61)],
               begin: Alignment.topRight
             )),
         child: Column(
@@ -35,20 +35,14 @@ class _PerfilPageState extends State<PerfilPage> {
             const SizedBox(
               height: 10.0,
             ),
-            Text(
-              'Perfil',
-              style: const TextStyle(
-                fontSize: 30.0,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
-            ),
+            
             CircleAvatar(
                       radius: 100.0,
                       backgroundColor: Colors.amberAccent,
                       backgroundImage: AssetImage('images/logo.jpg'),
                     ),
             Text(
-              'Bienvenido a tu perfil :',
+              '"Pet Center" ',
               style: const TextStyle(
                 fontSize: 35.0,
                 color: Color.fromARGB(255, 0, 0, 0),
@@ -60,7 +54,7 @@ class _PerfilPageState extends State<PerfilPage> {
             Text(
               'Usuario',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 13, 248, 111)),
+                  fontSize: 25, color: Color.fromARGB(255, 11, 11, 11)),
             ),
              Divider(
                     height: 10.0,
@@ -68,7 +62,7 @@ class _PerfilPageState extends State<PerfilPage> {
             Text(
               'Erick Guevara',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 0, 0, 0)),
+                  fontSize: 25, color: Color.fromARGB(255, 249, 247, 247)),
             ),
              Divider(
                     height: 10.0,
@@ -76,7 +70,7 @@ class _PerfilPageState extends State<PerfilPage> {
             Text(
               'Correo:',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 238, 40, 40)),
+                  fontSize: 25, color: Color.fromARGB(255, 16, 16, 16)),
             ),
              Divider(
                     height: 10.0,
@@ -84,7 +78,7 @@ class _PerfilPageState extends State<PerfilPage> {
             Text(
               'ead.guevara@yavirac.edu.ec',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 0, 0, 0)),
+                  fontSize: 25, color: Color.fromARGB(255, 249, 248, 248)),
             ),
              Divider(
                     height: 20.0,
@@ -92,7 +86,7 @@ class _PerfilPageState extends State<PerfilPage> {
             Text(
               'Edad :',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 35, 209, 240)),
+                  fontSize: 25, color: Color.fromARGB(255, 9, 9, 9)),
             ),// Espacio entre el texto y el botón
             Divider(
                     height: 10.0,
@@ -100,7 +94,7 @@ class _PerfilPageState extends State<PerfilPage> {
                   Text(
               '21',
               style: TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 0, 0, 0)),
+                  fontSize: 25, color: Color.fromARGB(255, 213, 210, 210)),
             ),
             Divider(
                     height: 10.0,

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class IconContainer extends StatelessWidget {
   final String url;
-  const IconContainer({super.key, required this.url}): assert(url != null);
+  const IconContainer({super.key, required this.url});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 220.0,
       width: 200.0,
       child: CircleAvatar(

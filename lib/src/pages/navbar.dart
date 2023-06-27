@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class nav extends StatelessWidget {
-  const nav({super.key});
+class Nav extends StatelessWidget {
+  const Nav({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,34 +10,33 @@ class nav extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
             accountName: Text('ErickGuevara'),
-            accountEmail:Text('ead.guevara@yavirac.edu.ec'),
+            accountEmail: Text('ead.guevara@yavirac.edu.ec'),
             currentAccountPicture: CircleAvatar(
-              child: ClipOval(child: Image.asset('images/perfil.jpg'))
+              child: ClipOval(child: Image.asset('images/perfil.jpg')),
             ),
           ),
           ListTile(
             leading: Icon(Icons.file_upload),
             title: Text('Subir fotos'),
-            onTap:() => {Navigator.popAndPushNamed(context, '/Imagenes')},
+            onTap: () => Navigator.popAndPushNamed(context, '/Imagenes'),
           ),
           ListTile(
             leading: Icon(Icons.account_circle),
             title: Text('Perfil'),
-            onTap:() => {Navigator.popAndPushNamed(context, '/Perfil')},
+            onTap: () => Navigator.popAndPushNamed(context, '/Perfil'),
           ),
           ListTile(
             leading: Icon(Icons.notifications),
             title: Text('Notificaciones'),
-            onTap:() => {Navigator.popAndPushNamed(context, '/Notificaciones')},
+            onTap: () => Navigator.popAndPushNamed(context, '/Notificaciones'),
           ),
-          
           ListTile(
             leading: Icon(Icons.dangerous),
-            title: Text('Peligro'),
-            onTap:() => {Navigator.popAndPushNamed(context, '/Error')},
+            title: Text('Lector De Barras'),
+            onTap: () => Navigator.popAndPushNamed(context, '/Lector De Barras'),
           ),
-        ]
-      )
+        ],
+      ),
     );
   }
 }

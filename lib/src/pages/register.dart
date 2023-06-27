@@ -28,12 +28,12 @@ class _RegisterPageState extends State<RegisterPage> {
                 fontFamily: 'RobotoMono'),
           ),
           centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 63, 2, 175)),
+          backgroundColor: Color.fromARGB(255, 12, 12, 12)),
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(colors:<Color>[ 
-              Color.fromARGB(255, 53, 10, 103),
-              Color.fromARGB(0, 69, 144, 235)],
+              Color.fromARGB(255, 249, 248, 250),
+              Color.fromARGB(255, 233, 133, 61)],
               begin: Alignment.topRight
             )),
         child: ListView(
@@ -52,7 +52,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 controller: _nameController,
                 decoration: InputDecoration(
                   icon: Icon(Icons.person),
-                  labelText: 'Nombre',
+                  labelText: 'Nombres',
                   hintText: 'Ingrese su nombre',
                   helperText: '',
                 ),
@@ -133,7 +133,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   Navigator.pushNamed(context, '/Login');
                   
       
-                  print('Nombre: $name');
+                  print('Nombres: $name');
                   print('Apellidos: $lastName');
                   print('Correo electrónico: $email');
                   print('Contraseña: $password');

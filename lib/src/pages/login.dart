@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
           title: const Text(
-            'Login LoL',
+            'Iniciar Sesión',
             style: TextStyle(
                 fontSize: 50.0,
                 fontWeight: FontWeight.bold,
@@ -22,13 +22,13 @@ class _LoginPageState extends State<LoginPage> {
                 fontFamily: 'RobotoMono'),
                 
           ),
-          backgroundColor: Color.fromARGB(255, 63, 2, 175),
+          backgroundColor: Color.fromARGB(255, 15, 15, 15),
           centerTitle: true,),
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(colors:<Color>[ 
-              Color.fromARGB(255, 53, 10, 103),
-              Color.fromARGB(0, 69, 144, 235)],
+              Color.fromARGB(255, 249, 248, 250),
+              Color.fromARGB(255, 233, 133, 61)],
               begin: Alignment.topRight
             )),
         child: ListView(
@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                       'Login',
                       style: const TextStyle(
                         fontSize: 50.0,
-                        color: Color.fromARGB(255, 78, 47, 163),
+                        color: Color.fromARGB(255, 16, 16, 16),
                       ),
                     ),
                     SizedBox(
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                       'Nombre',
                       style: const TextStyle(
                         fontSize: 25.0,
-                        color: Color.fromARGB(255, 255, 147, 65),
+                        color: Color.fromARGB(255, 17, 17, 17),
                       ),
                     ),
                     SizedBox(
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                       'Contraseña',
                       style: const TextStyle(
                         fontSize: 25.0,
-                        color: Color.fromARGB(255, 255, 147, 65),
+                        color: Color.fromARGB(255, 17, 17, 17),
                       ),
                     ),
                     SizedBox(
@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                       'Email',
                       style: const TextStyle(
                         fontSize: 25.0,
-                        color: Color.fromARGB(255, 255, 147, 65),
+                        color: Color.fromARGB(255, 17, 17, 17),
                       ),
                     ),
                     SizedBox(

@@ -17,8 +17,8 @@ class _OtraPageState extends State<OtraPage> {
           height: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(colors:<Color>[ 
-              Color.fromARGB(255, 101, 10, 103),
-              Color.fromARGB(0, 69, 144, 235)],
+               Color.fromARGB(255, 249, 248, 250),
+              Color.fromARGB(255, 233, 133, 61)],
               begin: Alignment.topCenter
             )
           ),

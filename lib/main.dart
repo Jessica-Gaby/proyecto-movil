@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rutas/src/pages/errorpage.dart';
+import 'package:rutas/src/pages/lectordebarraspage.dart';
 import 'package:rutas/src/pages/homepage.dart';
 import 'package:rutas/src/pages/login.dart';
-import 'package:rutas/src/pages/navbar.dart';
 import 'package:rutas/src/pages/notification.dart';
 import 'package:rutas/src/pages/otrapagina.dart';
 import 'package:rutas/src/pages/page404.dart';
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
     '/Otra':(context) => OtraPage(),
     '/Servicios':(context) => ServiciosPages(),
     '/Perfil':(context) => PerfilPage(),
-    '/Error':(context) => ErrorPage(),
+    '/Error':(context) => LectorDeBarrasPage(),
     '/Imagenes':(context) => ImagePage(),
     '/Notificaciones':(context) => NotificationPage(),
     

@@ -40,7 +40,7 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 63, 2, 175),
+        backgroundColor: Color.fromARGB(255, 11, 11, 11),
       ),
       body: ListView.builder(
           itemCount: products.length,
